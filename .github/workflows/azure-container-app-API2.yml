@@ -1,0 +1,29 @@
+name: Deploy Container APP to Azure
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+     - "Node/API2/**"
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # For Linux, use ubuntu-latest
+    environment: dev
+    steps:
+    - name: 'Checkout GitHub Action'
+      uses: actions/checkout@v3
+
+    - name: Log in to Azure
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_RBAC_CREDENTIALS_CONTAINERAPP }}
+  
+    - name: Build and deploy Container App
+      uses: azure/container-apps-deploy-action@v1
+      with:
+        appSourcePath: ${{ github.workspace }}/Node/API2
+        acrName: assignment2registryname
+        containerAppName: assignment2-container
+        resourceGroup: DefaultResourceGroup-EUS

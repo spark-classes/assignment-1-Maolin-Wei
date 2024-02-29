@@ -14,7 +14,7 @@ API2 folder is for an Azure Container application.
 ![image](https://github.com/spark-classes/assignment-1-Maolin-Wei/assets/144057115/5867fd43-9b63-4ea1-a5eb-bde207de053e)
 
 **2. Create a Workflow File on Github:** create a workflow file via GitHub action, which resides in the .github/workflows/ directory. This .yaml file defines the steps that the GitHub Actions runner will execute.
-![image](https://github.com/spark-classes/assignment-1-Maolin-Wei/assets/144057115/18281874-7d98-4f7e-80fa-7b068c34d62c)
+![image](https://github.com/spark-classes/assignment-1-Maolin-Wei/assets/144057115/966dcfb5-e0c5-4e48-8c22-0efc170b1409)
 
 **3. Add Secrets to GitHub Repository:** Store authentication information such as public-profile or RBAC credentials as secrets in the GitHub repository settings. 
 ![image](https://github.com/spark-classes/assignment-1-Maolin-Wei/assets/144057115/cf012476-6edc-4d07-9e48-827671fc5e9d)

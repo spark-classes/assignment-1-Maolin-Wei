@@ -9,6 +9,17 @@ API1 folder is for an Azure Functions application, which is a basic HTTP trigger
 ## API2
 API2 folder is for an Azure Container application.
 
+## Deployment
+**1. Create Azure Apps:** Create Web, Functions, and Container App on the Azure platform and deploy successfully. For the Container App, create a container registry first.
+
+**2. Create a Workflow File on Github:** create a workflow file via GitHub action, which resides in the .github/workflows/ directory. This .yaml file defines the steps that the GitHub Actions runner will execute.
+
+**3. Add Secrets to GitHub Repository:** Store authentication information such as public-profile or RBAC credentials as secrets in the GitHub repository settings. 
+
+**4. Configure the Workflow File:** modify the parameters including path, env, publish-profile, etc.
+
+**5. Test and debug the Deployment:** Verify if the deployment is successful. If not, check the error information and modify the configuration setting in the .yaml file.
+
 ## Workflow Diagram
 ![diagram](https://github.com/spark-classes/assignment-1-Maolin-Wei/assets/144057115/35d67af6-0cb0-4dc0-a879-1ae53c6c9087)
 

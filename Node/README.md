@@ -20,7 +20,7 @@ API2 folder is for an Azure Container application.
 ![image](https://github.com/spark-classes/assignment-1-Maolin-Wei/assets/144057115/e4a1d481-9ed0-45ad-afd0-c61ca71b8dbc)
 
 **4. Configure the Workflow File:** modify the parameters including path, env, publish-profile, etc.
-![image](https://github.com/spark-classes/assignment-1-Maolin-Wei/assets/144057115/9fc15de4-81b9-476d-9817-c91c834b786f)
+![image](https://github.com/spark-classes/assignment-1-Maolin-Wei/assets/144057115/5d846030-fea1-42e2-bda5-43fb4386491f)
 
 **5. Test and debug the Deployment:** Verify if the deployment is successful. If not, check the error information and modify the configuration setting in the .yaml file.
 ![image](https://github.com/spark-classes/assignment-1-Maolin-Wei/assets/144057115/33d861e2-a01c-4e26-a0ac-cf687b37224a)

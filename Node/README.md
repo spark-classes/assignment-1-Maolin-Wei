@@ -17,7 +17,7 @@ API2 folder is for an Azure Container application.
 ![image](https://github.com/spark-classes/assignment-1-Maolin-Wei/assets/144057115/18281874-7d98-4f7e-80fa-7b068c34d62c)
 
 **3. Add Secrets to GitHub Repository:** Store authentication information such as public-profile or RBAC credentials as secrets in the GitHub repository settings. 
-![image](https://github.com/spark-classes/assignment-1-Maolin-Wei/assets/144057115/e4a1d481-9ed0-45ad-afd0-c61ca71b8dbc)
+![image](https://github.com/spark-classes/assignment-1-Maolin-Wei/assets/144057115/cf012476-6edc-4d07-9e48-827671fc5e9d)
 
 **4. Configure the Workflow File:** modify the parameters including path, env, publish-profile, etc.
 ![image](https://github.com/spark-classes/assignment-1-Maolin-Wei/assets/144057115/5d846030-fea1-42e2-bda5-43fb4386491f)

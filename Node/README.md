@@ -9,4 +9,6 @@ API1 folder is for an Azure Functions application, which is a basic HTTP trigger
 ## API2
 API2 folder is for an Azure Container application.
 
-![diagram](https://github.com/spark-classes/assignment-1-Maolin-Wei/assets/144057115/edf975eb-8c78-4587-baaf-987154de40fb)
+## Workflow Diagram
+![diagram](https://github.com/spark-classes/assignment-1-Maolin-Wei/assets/144057115/35d67af6-0cb0-4dc0-a879-1ae53c6c9087)
+

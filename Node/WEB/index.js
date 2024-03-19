@@ -18,7 +18,7 @@ app.get('/api', async (req, res) => {
   try {
     const secretName = 'Secret1';
     const retrievedSecret = await client.getSecret(secretName);
-    res.send(`Hello, world! Secret value: ${retrievedSecret.value}`);
+    res.send(`Hello, world! This is ${retrievedSecret.value}`);
   } catch (error) {
     console.error('Error accessing secret from Key Vault:', error);
     res.status(500).send('Error accessing secret from Key Vault');

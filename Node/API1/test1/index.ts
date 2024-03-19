@@ -14,6 +14,7 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
     const keyVaultName = process.env.KEY_VAULT_NAME;
     const kvUrl = `https://${keyVaultName}.vault.azure.net/`;
     const secretClient = new SecretClient(kvUrl, credential);
+    
     try {
         const secretName = "Secret2";
         const retrievedSecret = await secretClient.getSecret(secretName);
@@ -21,6 +22,9 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
     } catch (error) {
         context.log(`Error retrieving Secret2: ${error}`);
     }
+
+    const queueMessage = "This is a message from the storage queue.";
+    context.bindings.outputQueue = queueMessage;
 
     context.res = {
         // status: 200, /* Defaults to 200 */

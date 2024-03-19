@@ -14,6 +14,13 @@
       "type": "http",
       "direction": "out",
       "name": "res"
+    },
+    {
+      "type": "queue",
+      "direction": "out",
+      "name": "storageQueue",
+      "queueName": "storagequeue",
+      "connection": "AzureStorage"
     }
   ],
   "scriptFile": "../dist/test1/index.js"

@@ -20,7 +20,7 @@
       "direction": "out",
       "name": "storageQueue",
       "queueName": "storagequeue",
-      "connection": "AzureStorage"
+      "connection": "AzureWebJobsMyStorage"
     }
   ],
   "scriptFile": "../dist/test1/index.js"

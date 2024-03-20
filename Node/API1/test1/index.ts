@@ -24,7 +24,7 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
     }
 
     const queueMessage = "This is a message from the storage queue.";
-    context.bindings.outputQueue = queueMessage;
+    context.bindings.storageQueue = queueMessage;
 
     context.res = {
         // status: 200, /* Defaults to 200 */

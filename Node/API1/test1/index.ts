@@ -23,8 +23,8 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
         context.log(`Error retrieving Secret2: ${error}`);
     }
 
-    const queueMessage = "This is a message from the storage queue.";
-    context.bindings.storageQueue = queueMessage;
+    // const queueMessage = "This is a message from the storage queue.";
+    // context.bindings.storageQueue = queueMessage;
 
     context.res = {
         // status: 200, /* Defaults to 200 */

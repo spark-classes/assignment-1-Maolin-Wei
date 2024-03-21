@@ -19,13 +19,6 @@ jobs:
       uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_RBAC_CREDENTIALS_CONTAINERAPP }}
-
-    - name: Retrieve secrets from Azure Key Vault
-      run: |
-        echo "KEY_VAULT_NAME=$(az keyvault show --name MyKeyVaultName --query name -o tsv)" >> $GITHUB_ENV
-        echo "SECRET_VALUE=$(az keyvault secret show --name MySecretName --vault-name MyKeyVaultName --query value -o tsv)" >> $GITHUB_ENV
-      env:
-        AZURE_RBAC_CREDENTIALS_CONTAINERAPP: ${{ secrets.AZURE_RBAC_CREDENTIALS_CONTAINERAPP }}
         
     - name: Build and deploy Container App
       uses: azure/container-apps-deploy-action@v1
@@ -34,3 +27,5 @@ jobs:
         acrName: assignment2registryname
         containerAppName: assignment2-container
         resourceGroup: DefaultResourceGroup-EUS
+      env:
+        secret3: ${{ secrets.secret3 }}

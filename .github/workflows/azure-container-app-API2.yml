@@ -23,7 +23,7 @@ jobs:
     - name: Create environment variables
       run: |
         echo "SECRET3=$(az keyvault secret show --vault-name Assignment4-KeyVaults --name Secret3 --query value -o tsv)" >> $GITHUB_ENV
-        echo "AZURE_WEBJOBS_STORAGE=$(az storage account show-connection-string --name assignment4storagequeue --query connectionString -o tsv)" >> $GITHUB_ENV
+        echo "AzureWebJobsStorage=$(az storage account show-connection-string --name assignment4storagequeue --query connectionString -o tsv)" >> $GITHUB_ENV
       env:
         creds: ${{ secrets.AZURE_RBAC_CREDENTIALS_CONTAINERAPP }}
         

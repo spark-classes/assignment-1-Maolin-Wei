@@ -22,7 +22,7 @@ jobs:
 
     - name: Set environment variables in Azure Container App
       run: |
-        az containerapp env set \
+        az containerapp env create \
           --name assignment2-container \
           --resource-group DefaultResourceGroup-EUS \
           --settings SECRET3=$(az keyvault secret show --vault-name Assignment4-KeyVaults --name Secret3 --query value -o tsv) \

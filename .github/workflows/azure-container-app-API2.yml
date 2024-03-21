@@ -28,7 +28,7 @@ jobs:
           --settings SECRET3=$(az keyvault secret show --vault-name Assignment4-KeyVaults --name Secret3 --query value -o tsv) \
                      AzureWebJobsStorage=$(az storage account show-connection-string --name assignment4storagequeue --query connectionString -o tsv)
       env:
-        creds: ${{ secrets.AZURE_RBAC_CREDENTIALS_CONTAINERAPP }}
+        AZURE_CREDENTIALS: ${{ secrets.AZURE_RBAC_CREDENTIALS_CONTAINERAPP }}
         
     - name: Build and deploy Container App
       uses: azure/container-apps-deploy-action@v1

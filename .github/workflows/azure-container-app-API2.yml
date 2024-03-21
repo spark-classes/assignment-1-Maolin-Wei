@@ -28,4 +28,4 @@ jobs:
         containerAppName: assignment2-container
         resourceGroup: DefaultResourceGroup-EUS
       env:
-        secret3: ${{ secrets.secret3 }}
+        Secret3: ${{ secrets.secret3 }}

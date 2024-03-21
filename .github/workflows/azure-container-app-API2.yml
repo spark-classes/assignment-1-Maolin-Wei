@@ -19,7 +19,11 @@ jobs:
       uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_RBAC_CREDENTIALS_CONTAINERAPP }}
-        
+
+    - name: Create environment variables
+      run: |
+        echo "AZURE_WEBJOBS_STORAGE=$(az storage account show-connection-string --name <StorageAccountName> --query connectionString -o tsv)" >> $GITHUB_ENV
+
     - name: Build and deploy Container App
       uses: azure/container-apps-deploy-action@v1
       with:
@@ -27,5 +31,3 @@ jobs:
         acrName: assignment2registryname
         containerAppName: assignment2-container
         resourceGroup: DefaultResourceGroup-EUS
-      env:
-        Secret3: ${{ secrets.secret3 }}

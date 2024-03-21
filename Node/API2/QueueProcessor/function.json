@@ -5,7 +5,7 @@
       "type": "queueTrigger",
       "direction": "in",
       "queueName": "storagequeue",
-      "connection": "AzureWebJobsMyStorage"
+      "connection": "AzureWebJobsStorage"
     }
   ]
 }

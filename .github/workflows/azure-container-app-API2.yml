@@ -9,6 +9,9 @@ on:
 
 jobs:
   build-and-deploy:
+    env:
+      KEY_VAULT_NAME: Assignment4-KeyVaults
+      AzureWebJobsStorage: ${{ secrets.AzureWebJobsStorage }}
     runs-on: ubuntu-latest # For Linux, use ubuntu-latest
     environment: dev
     steps:
@@ -27,3 +30,4 @@ jobs:
         acrName: assignment2registryname
         containerAppName: assignment2-container
         resourceGroup: DefaultResourceGroup-EUS
+        

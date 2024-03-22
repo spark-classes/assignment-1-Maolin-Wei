@@ -27,5 +27,5 @@ jobs:
         acrName: assignment2registryname
         containerAppName: assignment2-container
         resourceGroup: DefaultResourceGroup-EUS
-        environmentVariables: 'queuestorage=secretref:StorageSecret secret3=secretref:Secret3'
+        environmentVariables: 'queuestorage=secretref:queuestorage secret3=secretref:secret3'
         

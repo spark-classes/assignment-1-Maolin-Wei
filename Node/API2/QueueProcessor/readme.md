@@ -6,7 +6,7 @@ The `QueueTrigger` makes it incredibly easy to react to new Queues inside of Azu
 
 The QueueTrigger activates the function when a new message is added to the specified Azure Queue Storage. Defining the path to the queue in the function's bindings will enable the function to listen for new messages and process them accordingly.
 
-# Configuration
+### Configuration
 In function's function.json file, it specifies the binding configuration for the QueueTrigger.
 
 `name`: The variable name used in the function code to represent the queue item.
@@ -19,7 +19,7 @@ In function's function.json file, it specifies the binding configuration for the
 
 `connection`: The name of the app setting that contains the connection string to the Azure Storage account.
 
-# JavaScript Function Code
+### JavaScript Function Code
 The code will run when triggered, it will receive the message from the queue and log it. It will also read the Key Vault environment variable and log its value.
 
 `context`: Provides runtime information about the function, including logging.

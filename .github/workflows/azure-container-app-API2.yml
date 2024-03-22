@@ -27,5 +27,5 @@ jobs:
         acrName: assignment2registryname
         containerAppName: assignment2-container
         resourceGroup: DefaultResourceGroup-EUS
-        environmentVariables: 'queuestorage=secretref:queuestorage secret3=secretref:secret3'
+        environmentVariables: 'AzureWebJobsStorage=secretref:queuestorage secret3=secretref:secret3'
         

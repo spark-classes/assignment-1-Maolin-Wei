@@ -19,6 +19,7 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
         const secretName = "Secret2";
         const retrievedSecret = await secretClient.getSecret(secretName);
         context.log(`Secret2 = This is ${retrievedSecret.value}`);
+        context.log(`This is the value of secret2 got from process.env.secret2, ${process.env.secret2}`)
     } catch (error) {
         context.log(`Error retrieving Secret2: ${error}`);
     }

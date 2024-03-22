@@ -3,11 +3,14 @@
 ## Web
 The Web folder is an web application that will create a React App, it is bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+It will read the Key Vault secret from the environment and displays it when /api is invoked.
+![Q1 1_webapp](https://github.com/spark-classes/assignment-1-Maolin-Wei/assets/144057115/e542a53d-1828-4c59-aec9-5f3b28c3d765)
+
 ## API1
-API1 folder is for an Azure Functions application, which is a basic HTTP triggered function.
+API1 folder is for an Azure Functions application, which is a HTTP triggered function. When triggering, it will retrieve and log the value of the Key Vault secret. It also connects to a Storage Queue and will send a message to the Azure Queue Storage.
 
 ## API2
-API2 folder is for an Azure Container application.
+API2 folder is for an Azure Container application. The function in it will connects to the Azure Queue Storage and receive the message form API1.
 
 # Deployment
 **1. Create Azure Apps:** Create Web, Functions, and Container App on the Azure platform and deploy successfully. For the Container App, create a container registry first.

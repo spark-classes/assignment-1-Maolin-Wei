@@ -26,7 +26,7 @@ API2 folder is for an Azure Container application.
 ![image](https://github.com/spark-classes/assignment-1-Maolin-Wei/assets/144057115/33d861e2-a01c-4e26-a0ac-cf687b37224a)
 
 # Workflow Diagram
-![diagram](https://github.com/spark-classes/assignment-1-Maolin-Wei/assets/144057115/35d67af6-0cb0-4dc0-a879-1ae53c6c9087)
+![Diagram](https://github.com/spark-classes/assignment-1-Maolin-Wei/assets/144057115/c0451f5d-192a-4117-bc94-9c35c30ff21c)
 
 The deployment starts with a code push to GitHub, which is triggered through GitHub Actions. When user push something to the target folders of the main branch, the corresponding workflow will run and the app will be updated.
 

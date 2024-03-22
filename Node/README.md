@@ -8,9 +8,11 @@ It will read the Key Vault secret from the environment and displays it when /api
 
 ## API1
 API1 folder is for an Azure Functions application, which is a HTTP triggered function. When triggering, it will retrieve and log the value of the Key Vault secret. It also connects to a Storage Queue and will send a message to the Azure Queue Storage.
+![Q1 2_funcapp](https://github.com/spark-classes/assignment-1-Maolin-Wei/assets/144057115/bb515443-ee93-4927-b201-38a1c9fe5c5a)
 
 ## API2
 API2 folder is for an Azure Container application. The function in it will connects to the Azure Queue Storage and receive the message form API1.
+![Q3 1](https://github.com/spark-classes/assignment-1-Maolin-Wei/assets/144057115/58dea300-c577-459a-96f4-fc6ade8060d3)
 
 # Workflow Diagram
 ![Diagram](https://github.com/spark-classes/assignment-1-Maolin-Wei/assets/144057115/c0451f5d-192a-4117-bc94-9c35c30ff21c)
